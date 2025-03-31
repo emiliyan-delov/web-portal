@@ -53,7 +53,6 @@ function getTasks($config, $accessToken)
         echo json_encode(["error" => "No valid access token."]);
         exit;
     }
-
     $curl = curl_init();
     curl_setopt_array($curl, [
         CURLOPT_URL => $config['tasks_endpoint'],
