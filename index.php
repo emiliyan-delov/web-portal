@@ -15,19 +15,21 @@
     <div class="head-box">
         <input type="text" id="search" placeholder="Search tasks..." onkeyup="filterTable()">
         <button class="upload_image" onclick="openModal()">Upload Image</button>
+        <div class="clear"></div>
     </div>
-
-    <table id="taskTable">
-        <thead>
-        <tr>
-            <th class="w-7">Task</th>
-            <th class="w-26">Title</th>
-            <th class="w-60">Description</th>
-            <th class="w-7">Color</th>
-        </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div class="table-container">
+        <table id="taskTable">
+            <thead>
+            <tr>
+                <th class="w-7">Task</th>
+                <th class="w-26">Title</th>
+                <th class="w-60">Description</th>
+                <th class="w-7">Color</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
     <div id="loading" style="">
         <img src="https://i.gifer.com/ZKZg.gif" width="80px" alt="Loading..."/>
     </div>

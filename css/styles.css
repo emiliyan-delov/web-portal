@@ -2,8 +2,15 @@
     max-width: 1800px;
     margin: 1%;
 }
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
+
 table {
     width: 100%;
+    min-width: 600px; /* Adjust based on your content */
     border-collapse: collapse;
 }
 th, td {
@@ -66,7 +73,7 @@ tr:hover {
 }
 #search{
     max-width: 290px;
-    width: 100%;
+    width: 63%;
     height: 25px;
 }
 
@@ -84,3 +91,4 @@ tr:hover {
 #loading img {
     width: 80px;
 }
+.clear{clear: both;}
